@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    background: linear-gradient(90deg, #FF8D29 45%, #FFCD38 55%);
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    width: fit-content;
+}
+
+.left-half, .right-half {
+    height: 80vh;
+    width: 40vw;
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 10%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1EEE9;
+}
+
+.top-banner {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#code-mode {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: 9999;
+    left: 100%;
+    margin-left: -100px;
+    background-color: #F1EEE9;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#q-done {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: 9999;
+    left: 100%;
+    top: 100%;
+    margin-left: -100px;
+    margin-top: -50px;
+    background-color: #F1EEE9;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.render-base {
+    height: 85%;
+    position: relative;
+}
+
+.bottom-banner {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.CodeMirror {
+    min-height: 85%;
+    max-height: 85%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.left-set {
+    cursor: pointer;
+}
+
+.left-set i:hover {
+    color: rgb(25, 25, 25);
+}
+
+#work-status {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#work-space {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -175px;
+}
+
+#objective {
+    width: 300px;
+    height: 300px;
+}
+
+.booming-circle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+    left: 5%;
+    background-color: #764AF1;
+    border-radius: 50%;
+    animation: boom 2s infinite linear;
+}
+
+.rotating-square {
+    width: 200px;
+    height: 200px;
+    background-color: #5534A5;
+    border-radius: 5%;
+    position: absolute;
+    z-index: -1;
+    left: 80%;
+    top: 65%;
+    animation: rotate 4s infinite;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes boom {
+    0%  {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

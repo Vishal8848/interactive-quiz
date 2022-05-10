@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Club GCT</title>
+
+        <!-- Bootstrap v5.1.3 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- Font Awesome v6.1.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- jQuery v3.6.0 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Code Mirror v5.65 -->
+        <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+        <link rel="stylesheet" href="codemirror/theme/dracula.css">
+        <link rel="stylesheet" href="codemirror/theme/eclipse.css">
+
+        <!-- Customization -->
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+
+        <div class="booming-circle"></div>
+        <div class="rotating-square"></div>
+
+        <main>
+            <div class="left-half shadow">
+                <div id="code-mode" class="shadow-sm fw-bolder text-center text-muted fs-4 border"></div>
+                <textarea name="code-base" id="code-base" class="code-base"></textarea>
+                <div class="banner bottom-banner shadow p-3 border-top">
+                    <div class="left-set text-muted">
+                        <i class="toggle-bg fa-solid fa-circle-half-stroke fa-2x me-2" title="toggle background"></i>
+                        <i class="reset-code fa-solid fa-rotate-right fa-2x ms-2" title="reset code"></i>
+                        <span id="q-num" class="fs-5 fw-bold">&nbsp;&nbsp;&nbsp;Questions 1 of 5</span>
+                    </div>
+                    <div class="right-set">
+                        <div id="back" class="btn btn-lg btn-danger me-1">Back</div>
+                        <div id="next" class="btn btn-lg btn-warning me-1">Next</div>
+                        <div id="submit" class="btn btn-lg btn-success ms-1">Run</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-half shadow">
+                <div id="q-done" class="shadow-sm fw-bold text-center text-muted fs-4 border"></div>
+                <div class="banner top-banner p-3 border-bottom">
+                    <div id="q-id" class="fw-bold fs-5" style="width: 10%"></div>
+                    <div id="q-val" class="fs-6 text-muted" style="width: 90%"></div>
+                </div>
+                <div class="render-base">
+                    <div id="work-space"></div>
+                </div>
+            </div>
+        </main>
+    
+        <!-- Bootstrap v5.1.3 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Code Mirror v5.65 -->
+        <script src="codemirror/lib/codemirror.js"></script>
+        <script src="codemirror/mode/javascript/javascript.js"></script>
+        <script src="codemirror/mode/css/css.js"></script>
+
+    </body>
+</html>
